@@ -1,0 +1,54 @@
+<style>
+    .ql{
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 16px;
+        color: #000;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .ql::before,
+    .ql::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        content: "";
+        vertical-align: middle;
+    }    
+    .ql::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #7a0;
+    }    
+    .ql::after{
+        left: 3px;
+        width: 3px;
+        height: 3px;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+        
+    
+    body{
+        background-color: #fff;
+        color: #666;
+        font-family:  "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+    }
+    h1{
+        margin-right: 4%;
+        font-family: "M PLUS lp",sans-serif;
+        color: #333;
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+    </style>
+    <body>
+        <h1 class="ql">丸い矢印付きの見出し</h1>
+    </body>
