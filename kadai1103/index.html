@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Practice</title>
+    <style>
+        @media screen and (max-width: 479px) { 
+        #contents #l_contents {width: auto;float: none;}
+        #contents #r_contents {width: auto;float: none;}}
+        @media screen and (min-width: 767px) { #menu-bg {background-color: #00FFFF; }}
+        @media screen and (max-width: 479px) { #menu-bg {background-color: #00FF00; }}
+        @media screen and (max-width: 767px) { #menu-bg {background-color: #FF0000; }}
+        img {max-width: 100% ;height: auto;}
+        #menu {max-width: 1000px;width: 100%;margin-left: auto;margin-right: auto;}
+        .section0{
+            background-color: lightcyan;
+        }
+        .section1{
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .section2{
+            background-color: #ffd580;
+            padding: 20px;
+            margin: 20px;
+            border: 2px;
+            border-radius: 10px;
+        }
+        .section3{
+            background-color:  #cbc3e3;
+            padding: 20px;
+            margin: 20px;
+            border: 2px;
+            border-radius: 10px;
+        }
+    </style>
+    <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
+</head>
+<body>
+    <div class="section0">
+    <h1>Responsive Design Practice</h1>
+    <section class="section1">
+        <h2>Section1</h2>
+        <p>This is the first section. It has a light blue background.<br>
+           padding margin,and a box shadow. The layout<br>
+           adjusts responsively to different screen sizes.</p>
+        <img src="section1.jpg">
+    </section>
+
+    <section class="section2">
+        <h2>Section2</h2>
+        <p>This is the second section. It has a light orenge background.<br>
+            padding margin,and a box shadow. The layout adjusts<br>
+            responsively to different screen sizes.</p>
+        <img src="section2.jpg">
+    </section>
+
+    <section class="section3">
+        <h2>Section3</h2>
+        <p>This is the third section. It has a light purple background.<br>
+            padding margin,and a box shadow. The layout adjusts<br>
+            responsively to different screen sizes.</p>
+        <img src="section3.jpg">
+    </section>
+    </div>
+</body>
+</html>
