@@ -5,49 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Design Practice</title>
     <style>
-        @media screen and (max-width:979px){
-            #wrap{width: 100%;}
-            #logo{
-                display: block;
-                margin: 5px auto;
-                float: none;
-            }
-            #head_meg{
-                margin: 0;
-                text-align: center;
-                float: none;
-            }
-            h1{font-size: 20px;}
-            #head_img{
-                width: 100%;
-                height: auto;
-            }
-            nav{
-                width: 100%;
-                padding: 0;
-            }
-            nav li{width: 33.3%;}
-            nav a{
-                height: 60px;
-                background-repeat: no-repeat;
-                background-size: 100% 60px;
-            }
-            main{padding: 2%;}
-            h2{
-                font-size: 20px;
-                width: 320px;
-                height: 48px;
-                margin: 15px auto;
-                background-size: contain;
-            }
-            th{
-                width: 25%;
-                min-width: 120px;
-                max-width: 200px;
-            }
-            textarea{width: 95%;}
-        }
-        
+       
         .section0{
             background-color: lightcyan;
         }
@@ -72,6 +30,45 @@
             border: 2px;
             border-radius: 10px;
         }
+    @media (max-width: 767px) {
+    section {
+        margin: 5px;
+    }
+}
+    @media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+    @media (min-width: 1024px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section {
+        width: 30%;
+        margin: 10px;
+    }
+    .section1{
+        float: right;
+    }
+    .section2{
+        float: right;
+    }
+    .section3{
+        float: right;
+    }
+    
+}
+
     </style>
     <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1.0″>
 </head>
